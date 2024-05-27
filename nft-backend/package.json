@@ -1,0 +1,16 @@
+{
+  "name": "nft-backend",
+  "version": "1.0.0",
+  "description": "Backend server to handle NFT collection events",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^5.4.7",
+    "express": "^4.17.1",
+    "prettier": "^3.2.5"
+  }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NFT Collection</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        />
+    </head>
+    <body class="container mt-5">
+        <h1>NFT Collection</h1>
+        <div class="mb-3">
+            <h2>Create Collection</h2>
+            <input
+                type="text"
+                id="collectionName"
+                class="form-control"
+                placeholder="Collection Name"
+            />
+            <input
+                type="text"
+                id="collectionSymbol"
+                class="form-control mt-2"
+                placeholder="Collection Symbol"
+            />
+            <button onclick="createCollection()" class="btn btn-primary mt-2">
+                Create
+            </button>
+        </div>
+        <div>
+            <h2>Mint NFT</h2>
+            <input
+                type="text"
+                id="collectionAddress"
+                class="form-control"
+                placeholder="Collection Address"
+            />
+            <input
+                type="text"
+                id="recipientAddress"
+                class="form-control mt-2"
+                placeholder="Recipient Address"
+            />
+            <input
+                type="text"
+                id="tokenId"
+                class="form-control mt-2"
+                placeholder="Token ID"
+            />
+            <input
+                type="text"
+                id="tokenUri"
+                class="form-control mt-2"
+                placeholder="Token URI"
+            />
+            <button onclick="mintNFT()" class="btn btn-primary mt-2">
+                Mint
+            </button>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
